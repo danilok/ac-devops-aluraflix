@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  server:
+    container_name: aluraflix
+    build: .
+    ports: 
+      - "8000:8000"
+    volumes:
+      - db:/app/
+
+volumes:
+  db:
